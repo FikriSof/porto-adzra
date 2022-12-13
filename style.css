@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+.red span {
+  color: #9c2052;
+}
+
+.green span {
+  color: #107668;
+}
+
+body {
+  background: #f3f4e6;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container nav h1 {
+  font-size: 2rem;
+  color: #107668;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 20px 20px;
+}
+
+nav ul li a {
+  color: #9c2052;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #107668;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 15%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.header-text p {
+  color: rgba(50, 50, 50, 0.832);
+}
+
+/* ----------- about ----------- */
+#about {
+  padding: 70px 0;
+  color: #107668;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.aboutme p {
+  font-size: 25px;
+  text-align: center;
+  color: rgba(50, 50, 50, 0.832);
+  margin-top: 2rem;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.tab-titles p {
+  color: #9c2052;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #107668;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.skills {
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #9c2052;
+  font-size: 14px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* --------- portfolio --------- */
+#portfolio {
+  padding: 30px 0;
+  color: rgba(50, 50, 50, 0.832);
+}
+
+.porto-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.porto-title span {
+  color: #9c2052;
+}
+
+.title {
+  width: 100%;
+  margin: 6rem 0;
+}
+
+.sub-title {
+  color: #107668;
+}
+
+.certif-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3);
+  grid-gap: 15px;
+}
+
+.certif-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fit {
+  width: 100%;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 300;
+  margin-top: 20px;
+  color: #9c2052;
+}
+
+/* ------ responsive ------ */
+nav .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(images/responsive.png);
+  }
+  .header-text {
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #e6e8c9;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 25px;
+  }
+  .aboutme p {
+    font-size: 15px;
+  }
+  .tab-titles p {
+    font-size: 20px;
+    text-align: center;
+    left: 20px;
+  }
+  .porto-title {
+    font-size: 1rem;
+  }
+}

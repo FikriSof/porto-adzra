@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/ba702b9129.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1>ADZRA</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi!</h1>
+          <h1 class="red">
+            I'm
+            <span
+              >Shafira Adzra <br />
+              Erminabilah</span
+            >
+          </h1>
+          <p class="green">
+            <span>Digital marketing enthusiast</span> with a demonstrated history <br />
+            of working in <span>social media</span> and <span>digital ads</span> .
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="aboutme">
+          <h1 class="sub-title">ABOUT ME</h1>
+          <p class="green">
+            A final year student of Padjadjaran University and creative individual to the idea of content creation on how to influence costumer behavior on social media. Have a strong motivation to develop and learn new things. Experienced
+            at create creative content for social media such as <span>content writing</span>, <span>copy writing</span>, <span>content creation</span> and also understand how to <span>manage ads</span> on Instagram, facebook, and google.
+          </p>
+          <p class="red">
+            Hardworking person and responsible in doing a job and always keeping up with the latest trend. <br />
+            Looking for new insight and experience to further develop my <span>digital marketing</span> and <span>social media</span> skills.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <img src="images/skills.png" class="skills" />
+          </div>
+          <div class="tab-contents" id="experience">
+            <img src="images/experience-1.png" class="skills" />
+            <img src="images/experience-2.png" class="skills" />
+          </div>
+          <div class="tab-contents" id="education">
+            <img src="images/education.png" class="skills" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <p class="porto-title">
+          This journey has made me eager to explore more about <span>digital marketing</span>, <br />
+          and I'm <span>looking for an opportunity</span> to build a career in the <span>digital marketing</span> industry through this portfolio.
+        </p>
+        <h1 class="sub-title">PORTFOLIO</h1>
+        <img src="images/certif.png" class="title" />
+        <div class="certif-list">
+          <figure class="certif-item">
+            <img src="images/certif-1.png" class="certif-img" />
+          </figure>
+          <figure class="certif-item">
+            <img src="images/certif-2.png" class="certif-img" />
+          </figure>
+          <figure class="certif-item">
+            <img src="images/certif-3.png" class="certif-img" />
+          </figure>
+          <figure class="certif-item">
+            <img src="images/certif-4.png" class="certif-img" />
+          </figure>
+          <figure class="certif-item">
+            <img src="images/certif-5.png" class="certif-img" />
+          </figure>
+        </div>
+        <img src="images/digmar.png" class="title" />
+        <img src="images/digmar-1.png" class="fit" />
+        <img src="images/digmar-2.png" class="fit" />
+        <img src="images/adsman.png" class="title" />
+        <img src="images/adsman-1.png" class="fit" />
+        <img src="images/adsman-2.png" class="fit" />
+        <img src="images/adsman-3.png" class="fit" />
+        <img src="images/adsman-4.png" class="fit" />
+        <img src="images/adsman-5.png" class="fit" />
+        <img src="images/marev.png" class="title" />
+        <img src="images/marev-1.png" class="fit" />
+        <img src="images/marev-2.png" class="fit" />
+        <img src="images/marev-3.png" class="fit" />
+        <img src="images/concre.png" class="title" />
+        <img src="images/concre-1.png" class="fit" />
+        <img src="images/concre-2.png" class="fit" />
+        <img src="images/copwri.png" class="title" />
+        <img src="images/copwri-1.png" class="fit" />
+        <img src="images/admin.png" class="title" />
+        <img src="images/admin-1.png" class="fit" />
+        <img src="images/admin-2.png" class="fit" />
+        <img src="images/end.png" class="title" />
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2022, Developed by MFS. All Rights Reserved</p>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
