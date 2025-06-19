@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   box-sizing: border-box;
+}
+
+.safira-march {
+  font-family: "Safira March", sans-serif;
 }
 
 .red span {
@@ -86,12 +90,13 @@ nav ul li a:hover::after {
 
 /* ----------- about ----------- */
 #about {
-  padding: 70px 0;
+  margin-top: 5rem;
   color: #107668;
 }
 
 .sub-title {
-  font-size: 40px;
+  font-family: "Safira March", sans-serif;
+  font-size: 38px;
   font-weight: 600;
   text-align: center;
   margin-top: 5rem;
@@ -106,7 +111,7 @@ nav ul li a:hover::after {
 
 .tab-titles {
   display: flex;
-  margin: 20px 0 40px;
+  margin: 20px 0 100px 0;
   justify-content: center;
   margin-top: 2rem;
 }
