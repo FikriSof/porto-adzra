@@ -111,13 +111,14 @@ nav ul li a:hover::after {
 
 .tab-titles {
   display: flex;
-  margin: 20px 0 100px 0;
+  margin: 20px 0 40px 0;
   justify-content: center;
   margin-top: 2rem;
 }
 
 .tab-titles p {
   color: #9c2052;
+  font-size: 18px;
 }
 
 .tab-links {
