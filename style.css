@@ -224,11 +224,15 @@ nav .fas {
   #header {
     background-image: url(images/responsive.png);
   }
+  #about {
+    margin-top: 2.5rem;
+  }
   .header-text {
-    font-size: 16px;
+    font-size: 15px;
   }
   .header-text h1 {
-    font-size: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
   nav .fas {
     display: block;
@@ -254,18 +258,21 @@ nav .fas {
     left: 25px;
     cursor: pointer;
   }
-  .sub-title {
-    font-size: 25px;
-  }
+
   .aboutme p {
     font-size: 15px;
   }
   .tab-titles p {
-    font-size: 20px;
+    font-size: 8px;
     text-align: center;
     left: 20px;
   }
   .porto-title {
     font-size: 1rem;
+  }
+  .title {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
