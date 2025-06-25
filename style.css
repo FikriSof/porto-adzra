@@ -215,6 +215,22 @@ nav ul li a:hover::after {
   color: #9c2052;
 }
 
+.btn-cv {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: #107668;
+  color: #f3f4e6;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  background: #9c2052;
+}
+
 /* ------ responsive ------ */
 nav .fas {
   display: none;
@@ -226,6 +242,10 @@ nav .fas {
   }
   #about {
     margin-top: 2.5rem;
+  }
+  .btn-cv {
+    font-size: 14px;
+    padding: 10px 24px;
   }
   .header-text {
     font-size: 15px;
