@@ -7,12 +7,16 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/ba702b9129.js" crossorigin="anonymous"></script>
+    <!-- Load config FIRST so the rest of the page can read it -->
+    <script src="config.js"></script>
   </head>
   <body>
+
+    <!-- ── HERO ────────────────────────────────────────────── -->
     <div id="header">
       <div class="container">
         <nav>
-          <h1>ADZRA</h1>
+          <h1 id="nav-short-name"></h1>
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -24,166 +28,199 @@
         <div class="header-text">
           <h1>Hi!</h1>
           <h1 class="red safira-march">
-            I'm
-            <span
-              >Shafira Adzra Erminabilah</span
-            >
+            I'm <span id="hero-name"></span>
           </h1>
-          <p class="green">
-            <span>Digital marketing enthusiast</span> with a demonstrated history <br />
-            of working as <span>social media and kol specialist</span>
-          </p>
-          <!-- <a href="assets/CV_Shafira Adzra Erminabilah.pdf" class="btn-cv" download>Download CV</a> -->
+          <p class="green" id="hero-desc"></p>
+          <a id="btn-cv" class="btn-cv" download style="display:none">Download CV</a>
         </div>
       </div>
-    </div>
-    <div id="about">
-      <div class="aboutme">
-        <img src="images/about-1.png" class="fit" />
-        <img src="images/about-2.png" class="fit" />
-        <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('soft-skills')">SOFT SKILLS</p>
-            <p class="tab-links" onclick="opentab('hard-skills')">HARD SKILLS</p>
-            <p class="tab-links" onclick="opentab('tools')">TOOLS</p>
-            <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
-            <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
-          </div>
-          <div class="tab-contents active-tab" id="soft-skills">
-            <img src="images/soft-skills.png" class="skills" />
-          </div>
-          <div class="tab-contents" id="hard-skills">
-            <img src="images/hard-skills.png" class="skills" />
-          </div>
-          <div class="tab-contents" id="tools">
-            <img src="images/skills.png" class="skills" />
-          </div>
-          <div class="tab-contents" id="experience">
-            <img src="images/experiences.png" class="skills" />
-          </div>
-          <div class="tab-contents" id="education">
-            <img src="images/education.png" class="skills" />
-          </div>
-        </div>
-    </div>
-    <div id="portfolio">
-      <img src="images/journey.png" class="fit" />
-      <div class="container">
-        <img src="images/certif.png" class="title" />
-        <div class="certif-list">
-          <figure class="certif-item">
-            <img src="images/certif-1.jpg" class="certif-img" />
-          </figure>
-          <figure class="certif-item">
-            <img src="images/certif-2.jpg" class="certif-img" />
-          </figure>
-          <figure class="certif-item">
-            <img src="images/certif-3.png" class="certif-img" />
-          </figure>
-          <figure class="certif-item">
-            <img src="images/certif-4.jpg" class="certif-img" />
-          </figure>
-          <figure class="certif-item">
-            <img src="images/certif-5.jpg" class="certif-img" />
-          </figure>
-          <figure class="certif-item">
-            <img src="images/certif-6.jpg" class="certif-img" />
-          </figure>
-          <figure class="certif-item">
-            <img src="images/certif-7.jpg" class="certif-img" />
-          </figure>
-          <figure class="certif-item">
-            <img src="images/certif-8.jpg" class="certif-img" />
-          </figure>
-        </div>
-      </div>
-        <img src="images/portofolio.png" class="title" />
-        <img src="images/lf-1.png" class="title" />
-        <img src="images/lf-2.png" class="fit" />
-        <img src="images/lf-3.png" class="title" />
-        <img src="images/lf-4.png" class="fit" />
-        <img src="images/lf-5.png" class="fit" />
-        <img src="images/lf-6.png" class="fit" />
-        <img src="images/lf-7.png" class="title" />
-        <img src="images/lf-8.png" class="fit" />
-        <img src="images/lf-9.png" class="fit" />
-        <img src="images/lf-10.png" class="fit" />
-        <img src="images/era-1.png" class="title" />
-        <img src="images/era-2.png" class="fit" />
-        <img src="images/era-3.png" class="fit" />
-        <img src="images/era-4.png" class="fit" />
-        <img src="images/era-5.png" class="fit" />
-        <img src="images/era-6.png" class="title" />
-        <img src="images/era-7.png" class="fit" />
-        <img src="images/era-8.png" class="fit" />
-        <img src="images/era-9.png" class="title" />
-        <img src="images/era-10.png" class="fit" />
-        <img src="images/era-11.png" class="fit" />
-        <img src="images/era-12.png" class="fit" />
-        <img src="images/era-13.png" class="title" />
-        <img src="images/era-14.png" class="fit" />
-        <img src="images/era-15.png" class="fit" />
-        <img src="images/era-16.png" class="fit" />
-        <img src="images/era-17.png" class="fit" />
-        <img src="images/era-18.png" class="title" />
-        <img src="images/era-19.png" class="fit" />
-        <img src="images/era-20.png" class="fit" />
-        <img src="images/era-21.png" class="fit" />
-        <img src="images/kompas-1.png" class="title" />
-        <img src="images/kompas-2.png" class="fit" />
-        <img src="images/kompas-3.png" class="title" />
-        <img src="images/kompas-4.png" class="fit" />
-        <img src="images/kompas-5.png" class="fit" />
-        <img src="images/kompas-6.png" class="fit" />
-        <img src="images/kompas-7.png" class="fit" />
-        <img src="images/telkom-1.png" class="title" />
-        <img src="images/telkom-2.png" class="fit" />
-        <img src="images/telkom-3.png" class="fit" />
-        <img src="images/telkom-4.png" class="title" />
-        <img src="images/telkom-5.png" class="fit" />        
-        <img src="images/telkom-6.png" class="fit" />        
-        <img src="images/telkom-7.png" class="fit" />        
-        <img src="images/telkom-8.png" class="title" />        
-        <img src="images/telkom-9.png" class="fit" />        
-        <img src="images/telkom-10.png" class="fit" />
-        <img src="images/telkom-11.png" class="fit" />
-        <img src="images/telkom-12.png" class="title" />
-        <img src="images/telkom-13.png" class="fit" />
-        <img src="images/telkom-14.png" class="title" />
-        <img src="images/telkom-15.png" class="fit" />
-        <img src="images/scx-1.png" class="title" />
-        <img src="images/scx-2.png" class="fit" />
-        <img src="images/scx-3.png" class="title" />
-        <img src="images/scx-4.png" class="fit" />
-        <img src="images/scx-5.png" class="title" />
-        <img src="images/scx-6.png" class="fit" />
-        <img src="images/end.png" class="title" />
-    </div>
-    <div class="copyright">
-      <p>Copyright 2022, Developed by MFS. All Rights Reserved</p>
     </div>
 
+    <!-- ── ABOUT ────────────────────────────────────────────── -->
+    <div id="about">
+      <div class="aboutme" id="about-images-container">
+        <!-- about images injected by JS -->
+        <div class="tab-titles" id="tab-titles-container">
+          <!-- tab labels injected by JS -->
+        </div>
+        <!-- tab content panels injected by JS -->
+      </div>
+    </div>
+
+    <!-- ── PORTFOLIO ─────────────────────────────────────────── -->
+    <div id="portfolio">
+      <img id="journey-img" class="fit" />
+      <div class="container">
+        <img id="certif-title-img" class="title" />
+        <div class="certif-list" id="certif-list">
+          <!-- certif images injected by JS -->
+        </div>
+      </div>
+      <img id="portfolio-title-img" class="title" />
+      <div id="portfolio-sections">
+        <!-- portfolio sections injected by JS -->
+      </div>
+      <img id="end-img" class="title" />
+    </div>
+
+    <!-- ── FOOTER ─────────────────────────────────────────────── -->
+    <div class="copyright">
+      <p id="copyright-text"></p>
+    </div>
+
+    <!-- ── SCRIPTS ───────────────────────────────────────────── -->
     <script>
-      var tablinks = document.getElementsByClassName("tab-links");
+      /* --------------------------------------------------------
+         Apply theme colors from CONFIG
+      -------------------------------------------------------- */
+      (function applyTheme() {
+        const root = document.documentElement;
+        root.style.setProperty("--color-primary",   CONFIG.colors.primary);
+        root.style.setProperty("--color-secondary", CONFIG.colors.secondary);
+        root.style.setProperty("--color-bg",        CONFIG.colors.background);
+        root.style.setProperty("--color-nav-bg",    CONFIG.colors.navBg);
+      })();
+
+      /* --------------------------------------------------------
+         Helper: set background images via CSS var
+      -------------------------------------------------------- */
+      (function applyBackgrounds() {
+        const style = document.createElement("style");
+        style.textContent = `
+          #header {
+            background-image: url('${CONFIG.backgroundImage}');
+          }
+          @media only screen and (max-width: 600px) {
+            #header {
+              background-image: url('${CONFIG.backgroundImageMobile}');
+            }
+          }
+        `;
+        document.head.appendChild(style);
+      })();
+
+      /* --------------------------------------------------------
+         Hero section
+      -------------------------------------------------------- */
+      document.getElementById("nav-short-name").textContent = CONFIG.shortName;
+      document.getElementById("hero-name").textContent      = CONFIG.name;
+      document.getElementById("hero-desc").innerHTML =
+        `<span>${CONFIG.tagline}</span> ${CONFIG.description}`;
+
+      if (CONFIG.cvFile) {
+        const btn = document.getElementById("btn-cv");
+        btn.href         = CONFIG.cvFile;
+        btn.style.display = "inline-block";
+      }
+
+      /* --------------------------------------------------------
+         About — images
+      -------------------------------------------------------- */
+      const aboutContainer = document.getElementById("about-images-container");
+      CONFIG.aboutImages.forEach(function(src) {
+        const img = document.createElement("img");
+        img.src       = src;
+        img.className = "fit";
+        // Insert before tab-titles
+        aboutContainer.insertBefore(img, document.getElementById("tab-titles-container"));
+      });
+
+      /* --------------------------------------------------------
+         About — skill tabs
+      -------------------------------------------------------- */
+      const tabTitles  = document.getElementById("tab-titles-container");
+      const tabPanels  = [];
+
+      CONFIG.skills.forEach(function(skill, index) {
+        // Tab label
+        const p = document.createElement("p");
+        p.className   = "tab-links" + (index === 0 ? " active-link" : "");
+        p.textContent = skill.label;
+        p.setAttribute("onclick", `opentab('${skill.id}')`);
+        tabTitles.appendChild(p);
+
+        // Tab content panel
+        const div = document.createElement("div");
+        div.className = "tab-contents" + (index === 0 ? " active-tab" : "");
+        div.id        = skill.id;
+        const img     = document.createElement("img");
+        img.src       = skill.image;
+        img.className = "skills";
+        div.appendChild(img);
+        aboutContainer.appendChild(div);
+        tabPanels.push(div);
+      });
+
+      /* --------------------------------------------------------
+         Portfolio — journey banner
+      -------------------------------------------------------- */
+      document.getElementById("journey-img").src         = CONFIG.journeyImage;
+      document.getElementById("certif-title-img").src    = CONFIG.certifTitleImage;
+      document.getElementById("portfolio-title-img").src = CONFIG.portfolioTitleImage;
+      document.getElementById("end-img").src             = CONFIG.endImage;
+
+      /* --------------------------------------------------------
+         Portfolio — certificates grid
+      -------------------------------------------------------- */
+      const certifList = document.getElementById("certif-list");
+      CONFIG.certifImages.forEach(function(src) {
+        const figure = document.createElement("figure");
+        figure.className = "certif-item";
+        const img = document.createElement("img");
+        img.src       = src;
+        img.className = "certif-img";
+        figure.appendChild(img);
+        certifList.appendChild(figure);
+      });
+
+      /* --------------------------------------------------------
+         Portfolio — sections
+      -------------------------------------------------------- */
+      const sectionsContainer = document.getElementById("portfolio-sections");
+      CONFIG.portfolioSections.forEach(function(section) {
+        // Section title image (banner)
+        const titleImg = document.createElement("img");
+        titleImg.src       = section.titleImage;
+        titleImg.className = "title";
+        sectionsContainer.appendChild(titleImg);
+
+        // Section items
+        section.items.forEach(function(item) {
+          const img     = document.createElement("img");
+          img.src       = item.src;
+          img.className = item.isTitle ? "title" : "fit";
+          sectionsContainer.appendChild(img);
+        });
+      });
+
+      /* --------------------------------------------------------
+         Footer
+      -------------------------------------------------------- */
+      document.getElementById("copyright-text").textContent = CONFIG.copyright;
+
+      /* --------------------------------------------------------
+         Tab switching
+      -------------------------------------------------------- */
+      var tablinks   = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
+
       function opentab(tabname) {
-        for (tablink of tablinks) {
+        for (var tablink of tablinks) {
           tablink.classList.remove("active-link");
         }
-        for (tabcontent of tabcontents) {
+        for (var tabcontent of tabcontents) {
           tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
-    </script>
-    <script>
+
+      /* --------------------------------------------------------
+         Mobile nav
+      -------------------------------------------------------- */
       var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
+      function openmenu() { sidemenu.style.right = "0"; }
+      function closemenu() { sidemenu.style.right = "-200px"; }
     </script>
   </body>
 </html>
